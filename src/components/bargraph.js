@@ -10,7 +10,7 @@ import {
 } from "victory";
 
 function BarGraph() {
-  const AssignmentData = useSelector((state) => state.assignment);
+  const AssignmentData = useSelector((state) => state.base);
 
   const chartData = AssignmentData.map((data) => {
     return {
@@ -44,8 +44,10 @@ function BarGraph() {
 
   return (
     <div>
-      <h3> Average grades </h3>
-      <div> Below you can see the average grades for each assignment</div>
+      <h2> Average grades </h2>
+      <div className="descriptive-text">
+        Below you can see the average grades for each assignment
+      </div>
       <div className="chartcontainer">
         <VictoryChart
           maxDomain={{ y: 5 }}

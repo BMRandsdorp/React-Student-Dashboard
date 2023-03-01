@@ -4,10 +4,3 @@ export const nameCheckChange = (values) => {
     payload: values,
   };
 };
-
-/*export const nameUnchecked = (value) => {
-  return {
-    type: `UNCHECKED`,
-    payload: value,
-  };
-};*/
